@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Page </title>
+    <style>
+        body {
+            background-color: #767070;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .hidden-image {
+            width: 300px;
+            transition: transform 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+
+       
+        .image-container:hover .hidden-image {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <h2> "Just another ordinary image... unless you know where to look." </h2>
+    <!-- 2YXYsdmK2KfYp9mGINmE2YjYp9mEINin2YTZhdmK2YbYp9mGIC4uLiA= -->
+    <!-- 2KfZhNiq2KfYqiDYp9mEINmI2YTYrNmK2YPZhCDYp9mE2LHZhNmK2KfZhQ== -->
+
+    <div class="image-container">
+        <img src="before.jpg" alt="Secret Image" class="hidden-image">
+    </div>
+
+</body>
+</html>
